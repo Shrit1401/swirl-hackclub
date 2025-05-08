@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f8ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background-color: #ff69b4;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #ff69b4;
+  margin-bottom: 2rem;
+}
+
+/* Ice Cream Cards */
+.ice-cream-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.ice-cream-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.ice-cream-card:hover {
+  transform: translateY(-5px);
+}
+
+.ice-cream-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.ice-cream-card h3 {
+  color: #ff69b4;
+  margin: 1rem 0;
+}
+
+/* Fun Facts Section */
+.fun-facts {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.fun-facts ul {
+  list-style-position: inside;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ff69b4;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Timeline Section */
+.timeline {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.timeline-item {
+  border-left: 3px solid #ff69b4;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #ff69b4;
+  border-radius: 50%;
+  position: absolute;
+  left: -7.5px;
+  top: 5px;
+}
+
+/* Future Concepts */
+.future-concepts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.concept-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.concept-card:hover {
+  transform: translateY(-5px);
+}
+
+.concept-card h3 {
+  color: #ff69b4;
+  margin-bottom: 1rem;
+}
+
+/* Vintage Recipes */
+.vintage-recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.recipe-card {
+  background: #fff5f8;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px dashed #ff69b4;
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card h3 {
+  color: #ff69b4;
+  margin-bottom: 1rem;
+}
+
+/* Future Tech */
+.future-tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.tech-card {
+  background: linear-gradient(135deg, #fff 0%, #f0f8ff 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  border: 1px solid #e0e0e0;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tech-card h3 {
+  color: #ff69b4;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Past Page Styles */
+body.past {
+  background-color: #f5e6d3;
+}
+
+body.past h1 {
+  color: #8b4513;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px double #8b4513;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+body.past h2 {
+  color: #8b4513;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #8b4513;
+}
+
+body.past .timeline-item {
+  border-left: 3px solid #8b4513;
+  background: rgba(255, 248, 240, 0.9);
+  padding: 1.5rem;
+  border-radius: 0 10px 10px 0;
+  margin: 2rem 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.past .timeline-item::before {
+  background: #8b4513;
+  box-shadow: 0 0 0 4px #f5e6d3;
+}
+
+body.past .timeline-item h3 {
+  color: #8b4513;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+body.past .recipe-card {
+  background: #fff5f8;
+  border: 2px dashed #8b4513;
+  padding: 2rem;
+  position: relative;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #8b4513 79px,
+      #8b4513 81px,
+      transparent 81px
+    ),
+    linear-gradient(#fff5f8 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
+}
+
+body.past .recipe-card h3 {
+  color: #8b4513;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+body.past .fun-facts {
+  background: #fff5f8;
+  border: 2px solid #8b4513;
+  padding: 2rem;
+  position: relative;
+}
+
+body.past .fun-facts::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: -5px;
+  bottom: -5px;
+  background: #8b4513;
+  z-index: -1;
+}
+
+body.past .fun-facts li {
+  color: #4a4a4a;
+  margin: 1rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+body.past .fun-facts li::before {
+  content: "•";
+  color: #8b4513;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+}
+
+body.past nav {
+  background-color: #8b4513;
+  border-bottom: 3px double #f5e6d3;
+}
+
+body.past nav a {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+body.past footer {
+  background: #8b4513;
+  border-top: 3px double #f5e6d3;
+}
+
+/* Future Page Styles */
+body.future {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+}
+
+body.future h1 {
+  color: #00ff9d;
+  text-shadow: 0 0 10px rgba(0, 255, 157, 0.5);
+}
+
+body.future .concept-card,
+body.future .tech-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+body.future .concept-card h3,
+body.future .tech-card h3 {
+  color: #00ff9d;
+}
+
+body.future .fun-facts {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.future .fun-facts li {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 255, 157, 0.3);
+}
+
+body.future .concept-card:hover,
+body.future .tech-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+}
+
+/* Features Section */
+.features-section {
+  background: #fff5f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 105, 180, 0.08);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.features-section h2 {
+  color: #ff69b4;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.features-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features-section li {
+  background: #ffe4ec;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 4px rgba(255, 105, 180, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.features-section a {
+  color: #ff69b4;
+  text-decoration: underline;
+}
+
+.features-section button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.features-section button:hover {
+  background: #ff85c2;
+}
+
+.features-section mark {
+  background: #fff176;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+.features-section audio {
+  margin-top: 0.5rem;
+}
+
+.features-section ol {
+  margin: 0.5rem 0 0 1.5rem;
+}
